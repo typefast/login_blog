@@ -1,9 +1,9 @@
 <h1>SignUp</h1>
 
 <%= form_for :user, url: '/users' do |f| %>
-  <%= f.text_field :name, placeholder => 'Name' %>
-  <%= f.email_field :email, placeholder => 'Email' %>
-  <%= f.password_field :name, placeholder => 'Password' %>
-  <%= f.password_field :name, placeholder => 'Password Confirmation' %>
-  <%= f.submit %>
+  <%= f.text_field :name, :placeholder => 'Name' %>
+  <%= f.email_field :email, :placeholder => 'Email' %>
+  <%= f.password_field :name, :placeholder => 'Password' %>
+  <%= f.password_field :name, :placeholder => 'Password Confirmation' %>
+  <%= f.submit "Submit" %>
 <% end %>
