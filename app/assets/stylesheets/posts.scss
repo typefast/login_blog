@@ -1,3 +1,20 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background: #CEEBFB;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.fullwidth-jumbotron {
+  background: #EE5253;
+  padding: 6em 0;
+  
+  h1 {
+    color: #fff;
+  }
+}
