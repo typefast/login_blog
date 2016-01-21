@@ -7,15 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to 'Home', root_path %>
-<% if current_user %>
-  <%= link_to "Logout", '/logout' %>
-<% else %>
-  <%= link_to 'Login', '/login' %>
-  <%= link_to 'Signup', '/signup' %>
-<% end %>
 
-<%= yield %>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <%= link_to 'Blog', root_path, class: 'navbar-brand'%>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          
+          <% if current_user %>
+            <li><%= link_to "Logout", '/logout' %></li>
+          <% else %>
+            <li><%= link_to 'Login', '/login' %></li>
+            <li><%= link_to 'Signup', '/signup' %></li>
+          <% end %>
+  
+        </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
